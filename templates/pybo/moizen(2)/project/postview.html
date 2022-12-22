@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="PR-PD-01">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+
+        <script language="javascript">
+            function showapply() { window.open("apply.html", "a", "width=500, height=700, left=500, top=100"); }
+            function showconfirm() { window.open("confirm.html", "a", "width=500, height=700, left=500, top=100"); }
+            function showconfirmdone() { window.open("confirmdone.html", "a", "width=500, height=700, left=500, top=100"); }
+        </script>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,1,0" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link href="../style.css" rel="stylesheet" type="text/css"/>
+        <title> 상세 페이지 </title>
+    </head>
+
+    <body>
+        <nav class="container">
+            <div class="justify-content-around align-items-center row pb-3">
+                <a href="../home/Home.html" class="col-md-2 col-3"> <img src="../image/LOGO.png" style="width:100%" class="navbar-brand"> </a>
+                <form class="d-flex align-items-center col-5">
+                    <span class="material-icons search-icon">search</span>
+                    <input class="form-control me-2 search-box" type="search" aria-label="Search">                </form>
+                <a class="login-link active col-md-2 col-3" aria-current="page" href="../account/Login.html"> 로그인 </a>                
+            </div>
+            <div class="d-flex justify-content-around aling-items-center mx-auto home-nav py-2">
+                <a class="nav-link active" aria-current="page" href="../home/Home.html"> HOME </a>                
+                <a class="nav-link active" aria-current="page" href="../project/board.html"> 모이젠 게시판 </a>                
+                <a class="nav-link active" aria-current="page" href="../mypage/mypage.html"> 마이페이지 </a>                
+            </div>
+        </nav>
+
+        <main class="container">
+            <div class="d-flex justify-content-around mt-5">
+                <div class="py-3 d-flex" style="background-color: rgba(23,140,78,0.11)">
+                    <div class="me-5 ms-3">
+                        <img src="../image/TEST1.jpeg" style="height:200px; width:300px;">
+                    </div>
+                    <div>
+                        <div>
+                            종목명
+                        </div>
+                        <div>
+                            <h3> 프로젝트 제목 </h3>
+                        </div>
+                        <table class="tablestyle2">
+                            <tr>
+                                <td>
+                                    신청 마감일자
+                                </td>
+                                <td>
+                                    2022. 11. 30
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    경기 일자
+                                </td>
+                                <td>
+                                    2022. 12. 01
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    경기 위치
+                                </td>
+                                <td>
+                                    사라봉 구장
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="d-flex-row px-5">
+                    <p style="text-align:center; font-size:18px;"> 작성자 정보 </p>
+                    <img src="../image/face.jpeg" style="height:100px; width:100px;">
+                    <p style="text-align:center;"> 곽태원 </p>
+                    <button type="button" class="btn btn-dark" style="width:100%; margin:auto;"> 프로필 보기 </button>
+                </div>
+            </div>
+            <div class="my-5">
+                <div class="d-flex justify-content-between">
+                    <h3> 매칭현황 </h3>
+                    <table class="tablestyle3">
+                        <tr>
+                            <td>모집 인원</td>
+                            <td style="width:35px;">5명</td>
+                            <td>현재 인원</td>
+                            <td style="width:35px;">2명</td>
+                        </tr>
+                    </table>
+                </div>
+                <table class="postview-table tablestyle1">
+                    <tr>
+                        <td>
+                            NO
+                        </td>
+                        <td>
+                            신청자
+                        </td>
+                        <td>
+                            이메일
+                        </td>
+                        <td>
+                            신청 일자
+                        </td>
+                        <td>
+                            진행 상태
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            1
+                        </td>
+                        <td>
+                            신청자
+                        </td>
+                        <td>
+                            이메일
+                        </td>
+                        <td>
+                            신청 일자
+                        </td>
+                        <td>
+                            <a href="javascript:showconfirmdone()" class="postview-click">승인</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            2
+                        </td>
+                        <td>
+                            -
+                        </td>
+                        <td>
+                            jeju@jejunu.ac.kr
+                        </td>
+                        <td>
+                            2022.10.16
+                        </td>
+                        <td>
+                            <a href="javascript:showconfirmdone()" class="postview-click"> 승인 </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            3
+                        </td>
+                        <td>
+                            -
+                        </td>
+                        <td>
+                            national@jejunu.ac.kr
+                        </td>
+                        <td>
+                            2022.10.18
+                        </td>
+                        <td>
+                            <a href="javascript:showconfirm()" class="postview-click"> 신청 </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            4
+                        </td>
+                        <td>
+                            -
+                        </td>
+                        <td>
+                            univ@jejunu.ac.kr
+                        </td>
+                        <td>
+                            2022.10.18
+                        </td>
+                        <td>
+                           <a href="javascript:showconfirmdone()" class="postview-click"> 반려 </a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="mt-4">
+                <h3 class="text-align-center"> 
+                    본문
+                </h3>
+                <div style="width:100%; height:200px; border:1px solid black; padding-left:5px;"> 
+                    본문내용
+                </div>
+            </div>
+            <div class="mt-5">
+                <h3> 경기장 위치 </h3>
+                <div id="map" style="width:85%; height:400px; margin:auto;"></div></td>
+            </div>
+            <div class="d-flex justify-content-center">
+                <button type="button" class="btn apply my-5" onclick="showapply();"> 
+                    <span class="material-symbols-outlined gf-default">
+                        person_add
+                        </span>
+                    신청하기 </button>
+            </div>
+            
+
+
+        </main>
+    </body>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a26b9c3916caa8ad7e568e44d5f1a313"></script>
+    <script>
+        var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
+        var options = { //지도를 생성할 때 필요한 기본 옵션
+            center: new kakao.maps.LatLng(33.450701, 126.570667), //지도의 중심좌표.
+            level: 3 //지도의 레벨(확대, 축소 정도)
+        };
+
+        var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+    </script>
+
+    <style>
+        .tablestyle1 td{
+        width:150px;
+        padding : 5px 10px;
+        border : 1px solid #444444; 
+        text-align:center;
+        }
+
+        .tablestyle2 td{
+            width: 120px;
+            padding: 5px 10px 5px 0px;
+        }
+
+        .tablestyle3 td{
+            width:80px;
+            text-align:end;
+        }
+    </style>
+
+</html>
