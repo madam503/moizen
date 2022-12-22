@@ -1,0 +1,147 @@
+{% extends 'navbar.html' %}
+{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" type="text/css" href="{% static 'bootstrap.min.css' %}">
+        <!-- pybo CSS -->
+        <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+        <title>Hello, pybo!</title>
+    </head>
+<body>
+<main class="container">
+    <div width="100%" class="d-flex mt-5"> 
+        <div class="d-flex-row px-5 me-5">
+            <img src="{% static 'image/face.jpeg' %}" style="height:100px; width:100px;">
+            <p style="text-align:center;"> {{ user.username }} </p>
+            <a href="./passwordcheck.html" type="button" class="btn btn-dark" style="width:100%; margin:auto;"> 정보 수정 </a>
+        </div>
+
+        <div>
+            <h3> 마이페이지 메인 </h3>
+            <div class="px-3 py-3" style="background-color:#578E9E; border-radius:10px;">
+                <span> <h5> 활동 현황 </h5> </span>
+                <table >
+                    <tr>
+                        <td class="mypage-td1"> 1 </td>
+                        <td class="mypage-td1"> 2 </td>
+                        <td class="mypage-td1"> 1 </td>
+                        <td class="mypage-td1"> 1 </td>
+                        <td class="mypage-td1"> 1 </td>
+                    </tr>    
+                    <tr> 
+                        <td class="mypage-td2"> 주최 </td>
+                        <td class="mypage-td2"> 신청 </td>
+                        <td class="mypage-td2"> 매칭 성공 </td>
+                        <td class="mypage-td2"> 매칭 실패 </td>
+                        <td class="mypage-td2"> 경기 완료 </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="my-5">
+                <h3> 개인 참가 히스토리 </h3>
+                <table class="postview-table">
+                    <tr>
+                        <td class="history-td">
+                            종목
+                        </td>
+                        <td class="history-td">
+                            제목
+                        </td>
+                        <td class="history-td">
+                            경기 일자
+                        </td>
+                        <td class="history-td">
+                            진행 상태
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="history-td">
+                            축구
+                        </td>
+                        <td class="history-td">
+                            -
+                        </td>
+                        <td class="history-td">
+                            2022.01.01
+                        </td>
+                        <td class="history-td">
+                            <a href="javascript:showconfirmdone()" class="postview-click"> 승인 </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="history-td">
+                            농구
+                        </td>
+                        <td class="history-td">
+                            -
+                        </td>
+                        <td class="history-td">
+                            2022.10.16
+                        </td>
+                        <td class="history-td">
+                            <a href="javascript:showconfirmdone()" class="postview-click"> 승인 </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="history-td">
+                            축구
+                        </td>
+                        <td class="history-td">
+                            -
+                        </td>
+                        <td class="history-td">
+                            2022.10.18
+                        </td>
+                        <td class="history-td">
+                            <a href="javascript:showconfirm()" class="postview-click"> 신청 </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="history-td">
+                            축구
+                        </td>
+                        <td class="history-td">
+                            -
+                        </td>
+                        <td class="history-td">
+                            2022.10.18
+                        </td>
+                        <td class="history-td">
+                            <a href="javascript:showconfirmdone()" class="postview-click"> 반려 </a>
+                        </td>
+                    </tr>
+                </table>
+                <div class="d-flex justify-content-center my-4">
+                    <ul class="pagination">
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                          <span aria-hidden="true">&laquo;</span>
+                        </a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link" href="#">4</a></li>
+                      <li class="page-item"><a class="page-link" href="#">5</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                          <span aria-hidden="true">&raquo;</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>
+{% endblock %}

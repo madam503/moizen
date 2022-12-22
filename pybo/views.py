@@ -26,6 +26,9 @@ def list(request):
     context = {'question_list': page_obj}
     return render(request, 'pybo/question_list.html', context)
 
+def mypage(request):
+    return render(request, 'pybo/mypage.html')
+
 def detail(request, question_id):
     question = get_object_or_404(Question, pk=question_id)
     context = {'question': question}
